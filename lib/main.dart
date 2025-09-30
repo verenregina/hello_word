@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:hello_word/basic_widgets/image_widget.dart';
-//import 'package:hello_word/basic_widgets/text_widget.dart';
+import 'package:hello_word/basic_widgets/text_widget.dart';
+
+// mengimport semua widget yang sudah kamu buat
+//------------------------------------------------//
+import 'package:hello_word/basic_widgets/loading_cupertino.dart';
+import 'package:hello_word/basic_widgets/fab_widget.dart';
+import 'package:hello_word/basic_widgets/scaffold_widget.dart';
+import 'package:hello_word/basic_widgets/dialog_widget.dart';
+import 'package:hello_word/basic_widgets/textfield_widget.dart';
+import 'package:hello_word/basic_widgets/datepicker_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +41,13 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        // home: const LoadingCupertino()
+        // home: const FabWidget(),
+        // home: const ScaffoldWidget(),
+        // home: const DialogWidget(),
+        // home: const TextFieldWidget(),
+        // home: const DatePickerWidget(),
+      home: const DatePickerWidget(),
     );
   }
 }
